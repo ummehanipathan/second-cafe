@@ -1,0 +1,294 @@
+
+
+body{
+    /* overflow: hidden; */
+}
+
+#mainNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    z-index: 111111111111;
+    overflow: hidden!important;
+}
+
+
+
+
+
+
+/* firs-section */
+.first-right-section {
+    transform: translateX(-120%);
+    transition: .5s;
+
+}
+.first-section:hover .first-right-section{
+    transform: translateX(0);
+    transition: .5s;
+}
+
+
+
+
+/* four-section */
+ 
+.four-section{
+    overflow: hidden;
+}
+
+.four-section:hover #my-card {
+    transform: translateY(0);
+    opacity: 1;
+    transition: .5s linear;
+
+}
+ #my-card {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: .5s linear;
+}
+.card-hover{
+    width: 350px;
+    height: 250px;
+    background-color: red;
+
+}
+
+/* second-section */
+.second-section .img-div{
+    overflow: hidden;
+    transition: .5s linear;
+    border: none;
+}
+.second-section .img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s linear;
+}
+.second-section .img-div:hover img{
+    transform: rotate(-10deg);
+    scale: 1.5;
+    transition: .5s linear;
+} 
+.second-section .card-hover{
+    width: 100%;
+    height: 100%;
+    color: green;
+    background-color:rgba(255, 255, 255, 0.47);
+    position: absolute;
+    padding: 25px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s linear;
+    opacity: 0;
+
+}
+.second-section .img-div:hover .card-hover{
+    opacity: 1;
+    transition: .5s linear;
+    top: 0 ;
+}
+
+/* third-section */
+.third-left-section{
+    transform:translateX(-120%) ;
+    transition: .5s linear;
+}
+.third-right-section{
+    transform:translateX(120%) ;
+    transition: .5s linear;
+}
+.third-section:hover .third-left-section{
+    transform: translateX(0);
+    transition: .5s linear;
+}
+
+.third-section:hover .third-right-section {
+    transform: translateX(0);
+    transition: .5s linear;
+}
+
+/* six-section */
+.six-section{
+   background-color: burlywood;
+}
+
+/* five-section */
+.five-text-section {
+    transform: translateX(-120%);
+    transition: .5s linear;
+}
+.five-section:hover .five-text-section{
+    transform: translateY(0);
+    transition: .5s linear;
+}
+
+
+
+
+.review-card {
+   
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+card{
+    flex: 300 ,0, 0;
+}
+
+@keyframes moving-slides {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+.slide-box{
+    animation-name: moving-slides;
+    animation-duration: 30s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .first-section .first{
+
+        font-size: 50px!important;ortant;
+    
+    }
+
+    .carousel{
+        height: 600px;
+    }
+    .carousel img{
+        height: 600px;
+        object-fit: cover;
+    }
+    .first-left-section{
+        
+     padding: 30px;
+        
+        
+    }
+    .first-right-section{
+        
+      
+     height: 600px!important;
+
+    }
+    .second{
+        
+        height: auto!important;
+        
+    }
+    .second-section-row{
+        
+        height: auto!important;
+    }
+    .second-two-row{
+        
+        height: auto!important;
+    }
+    .third-section{
+        
+        height: auto!important;
+        
+    
+    }
+    .third-left-section{
+
+        height: auto;
+    }
+    .third-right-section{
+        
+        height: auto;
+    }
+    .third-right-section h1 {
+    
+        font-size: 40px!important;
+    }
+    
+    .four-section{
+        
+        height: auto!important;
+        
+    }
+    
+    .four-section-row{
+        
+        height: auto!important;
+        padding: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 20px;
+    }
+    .card-two img{
+      height: 250px!important;  
+
+    }
+    
+
+   .five-section{
+    
+    height: auto;
+
+    }
+    .five-left{
+        
+        height: auto!important;
+    }
+    
+    .footer{
+        
+        padding: 50px;
+        display: flex;
+        flex-direction: column!important;
+        
+        
+    }
+    .one-footer{
+        padding: 50px;
+
+        
+    }
+    .three-footer{
+        
+        padding: 40px;
+    }
+    .fot-sec{
+        
+        display: flex;
+    }
+    .contact-card {
+        width: 200px!important;
+    
+    }
+    .last-icon-div{
+    
+        width: 300px!important;
+    }
+
+    
+}
